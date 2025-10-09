@@ -15,7 +15,7 @@ productId=1&redir=PRODUCT&quantity=1&price=1
 
 ## Lab: Low-level logic flaw
 
-![[Pasted image 20251004230825.png]]
+![[/img/Pasted image 20251004230825.png]]
 
 ![[Pasted image 20251004231338.png]]
 
