@@ -4,28 +4,35 @@
 - 
 ## Lab: Limit overrun race conditions
 
-![[Pasted image 20251008131333.png]]
+![Pasted image 20251008131333.png](img/
+________
+-__Enviar_múltiples_request_en_simultaneo,_puede_ser_trigger_race_conditions_o_con_grupos_en_burp_repeater
+-_Turbo_intruder
+-_
+##_Lab:_Limit_overrun_race_conditions
+
+![Pasted_image_20251008131333.png](img/Pasted_image_20251008131333.png)
 
 ## Lab: Bypassing rate limits via race conditions
 
-![[Pasted image 20251008142846.png]]
+![Pasted image 20251008142846.png](img/Pasted_image_20251008142846.png)
 
-![[Pasted image 20251008142821.png]]
+![Pasted image 20251008142821.png](img/Pasted_image_20251008142821.png)
 
 ## Lab: Multi-endpoint race conditions
 
-![[Pasted image 20251008150214.png]]
+![Pasted image 20251008150214.png](img/Pasted_image_20251008150214.png)
 
-![[Pasted image 20251008150221.png]]
+![Pasted image 20251008150221.png](img/Pasted_image_20251008150221.png)
 
 ## Lab: Single-endpoint race conditions
 
 Enviar el grupo muchas veces
-![[Pasted image 20251008152302.png]]
-![[Pasted image 20251008152320.png]]
+![Pasted image 20251008152302.png](img/Pasted_image_20251008152302.png)
+![Pasted image 20251008152320.png](img/Pasted_image_20251008152320.png)
 
 
-![[Pasted image 20251008152255.png]]
+![Pasted image 20251008152255.png](img/Pasted_image_20251008152255.png)
 
 ## Lab: Exploiting time-sensitive vulnerabilities
 
@@ -33,10 +40,477 @@ Debido a un bloqueo que permite solo enviar 1 petición por id de session, se de
 
 Debido a que el hash generaba el token en base a un timestamp y no incluia en ese hash el nombre de usuario podían tener dos usuarios un mismo token. 
 
-![[Pasted image 20251008154113.png]]
+![Pasted image 20251008154113.png](img/Pasted_image_20251008154113.png)
 
-![[Pasted image 20251008154122.png]]
+![Pasted image 20251008154122.png](img/Pasted_image_20251008154122.png)
 
-![[Pasted image 20251008154140.png]]
+![Pasted image 20251008154140.png](img/Pasted_image_20251008154140.png)
+
+simplemente en el link cambia el user por carlos. -replace " ", "_"
+    )
+
+## Lab: Bypassing rate limits via race conditions
+
+![Pasted image 20251008142846.png](img/
+________
+-__Enviar_múltiples_request_en_simultaneo,_puede_ser_trigger_race_conditions_o_con_grupos_en_burp_repeater
+-_Turbo_intruder
+-_
+##_Lab:_Limit_overrun_race_conditions
+
+![Pasted_image_20251008131333.png](img/Pasted_image_20251008131333.png)
+
+## Lab: Bypassing rate limits via race conditions
+
+![Pasted image 20251008142846.png](img/Pasted_image_20251008142846.png)
+
+![Pasted image 20251008142821.png](img/Pasted_image_20251008142821.png)
+
+## Lab: Multi-endpoint race conditions
+
+![Pasted image 20251008150214.png](img/Pasted_image_20251008150214.png)
+
+![Pasted image 20251008150221.png](img/Pasted_image_20251008150221.png)
+
+## Lab: Single-endpoint race conditions
+
+Enviar el grupo muchas veces
+![Pasted image 20251008152302.png](img/Pasted_image_20251008152302.png)
+![Pasted image 20251008152320.png](img/Pasted_image_20251008152320.png)
+
+
+![Pasted image 20251008152255.png](img/Pasted_image_20251008152255.png)
+
+## Lab: Exploiting time-sensitive vulnerabilities
+
+Debido a un bloqueo que permite solo enviar 1 petición por id de session, se debe enviar la petición con un id de sesion distinto. 
+
+Debido a que el hash generaba el token en base a un timestamp y no incluia en ese hash el nombre de usuario podían tener dos usuarios un mismo token. 
+
+![Pasted image 20251008154113.png](img/Pasted_image_20251008154113.png)
+
+![Pasted image 20251008154122.png](img/Pasted_image_20251008154122.png)
+
+![Pasted image 20251008154140.png](img/Pasted_image_20251008154140.png)
+
+simplemente en el link cambia el user por carlos. -replace " ", "_"
+    )
+
+![Pasted image 20251008142821.png](img/
+________
+-__Enviar_múltiples_request_en_simultaneo,_puede_ser_trigger_race_conditions_o_con_grupos_en_burp_repeater
+-_Turbo_intruder
+-_
+##_Lab:_Limit_overrun_race_conditions
+
+![Pasted_image_20251008131333.png](img/Pasted_image_20251008131333.png)
+
+## Lab: Bypassing rate limits via race conditions
+
+![Pasted image 20251008142846.png](img/Pasted_image_20251008142846.png)
+
+![Pasted image 20251008142821.png](img/Pasted_image_20251008142821.png)
+
+## Lab: Multi-endpoint race conditions
+
+![Pasted image 20251008150214.png](img/Pasted_image_20251008150214.png)
+
+![Pasted image 20251008150221.png](img/Pasted_image_20251008150221.png)
+
+## Lab: Single-endpoint race conditions
+
+Enviar el grupo muchas veces
+![Pasted image 20251008152302.png](img/Pasted_image_20251008152302.png)
+![Pasted image 20251008152320.png](img/Pasted_image_20251008152320.png)
+
+
+![Pasted image 20251008152255.png](img/Pasted_image_20251008152255.png)
+
+## Lab: Exploiting time-sensitive vulnerabilities
+
+Debido a un bloqueo que permite solo enviar 1 petición por id de session, se debe enviar la petición con un id de sesion distinto. 
+
+Debido a que el hash generaba el token en base a un timestamp y no incluia en ese hash el nombre de usuario podían tener dos usuarios un mismo token. 
+
+![Pasted image 20251008154113.png](img/Pasted_image_20251008154113.png)
+
+![Pasted image 20251008154122.png](img/Pasted_image_20251008154122.png)
+
+![Pasted image 20251008154140.png](img/Pasted_image_20251008154140.png)
+
+simplemente en el link cambia el user por carlos. -replace " ", "_"
+    )
+
+## Lab: Multi-endpoint race conditions
+
+![Pasted image 20251008150214.png](img/
+________
+-__Enviar_múltiples_request_en_simultaneo,_puede_ser_trigger_race_conditions_o_con_grupos_en_burp_repeater
+-_Turbo_intruder
+-_
+##_Lab:_Limit_overrun_race_conditions
+
+![Pasted_image_20251008131333.png](img/Pasted_image_20251008131333.png)
+
+## Lab: Bypassing rate limits via race conditions
+
+![Pasted image 20251008142846.png](img/Pasted_image_20251008142846.png)
+
+![Pasted image 20251008142821.png](img/Pasted_image_20251008142821.png)
+
+## Lab: Multi-endpoint race conditions
+
+![Pasted image 20251008150214.png](img/Pasted_image_20251008150214.png)
+
+![Pasted image 20251008150221.png](img/Pasted_image_20251008150221.png)
+
+## Lab: Single-endpoint race conditions
+
+Enviar el grupo muchas veces
+![Pasted image 20251008152302.png](img/Pasted_image_20251008152302.png)
+![Pasted image 20251008152320.png](img/Pasted_image_20251008152320.png)
+
+
+![Pasted image 20251008152255.png](img/Pasted_image_20251008152255.png)
+
+## Lab: Exploiting time-sensitive vulnerabilities
+
+Debido a un bloqueo que permite solo enviar 1 petición por id de session, se debe enviar la petición con un id de sesion distinto. 
+
+Debido a que el hash generaba el token en base a un timestamp y no incluia en ese hash el nombre de usuario podían tener dos usuarios un mismo token. 
+
+![Pasted image 20251008154113.png](img/Pasted_image_20251008154113.png)
+
+![Pasted image 20251008154122.png](img/Pasted_image_20251008154122.png)
+
+![Pasted image 20251008154140.png](img/Pasted_image_20251008154140.png)
+
+simplemente en el link cambia el user por carlos. -replace " ", "_"
+    )
+
+![Pasted image 20251008150221.png](img/
+________
+-__Enviar_múltiples_request_en_simultaneo,_puede_ser_trigger_race_conditions_o_con_grupos_en_burp_repeater
+-_Turbo_intruder
+-_
+##_Lab:_Limit_overrun_race_conditions
+
+![Pasted_image_20251008131333.png](img/Pasted_image_20251008131333.png)
+
+## Lab: Bypassing rate limits via race conditions
+
+![Pasted image 20251008142846.png](img/Pasted_image_20251008142846.png)
+
+![Pasted image 20251008142821.png](img/Pasted_image_20251008142821.png)
+
+## Lab: Multi-endpoint race conditions
+
+![Pasted image 20251008150214.png](img/Pasted_image_20251008150214.png)
+
+![Pasted image 20251008150221.png](img/Pasted_image_20251008150221.png)
+
+## Lab: Single-endpoint race conditions
+
+Enviar el grupo muchas veces
+![Pasted image 20251008152302.png](img/Pasted_image_20251008152302.png)
+![Pasted image 20251008152320.png](img/Pasted_image_20251008152320.png)
+
+
+![Pasted image 20251008152255.png](img/Pasted_image_20251008152255.png)
+
+## Lab: Exploiting time-sensitive vulnerabilities
+
+Debido a un bloqueo que permite solo enviar 1 petición por id de session, se debe enviar la petición con un id de sesion distinto. 
+
+Debido a que el hash generaba el token en base a un timestamp y no incluia en ese hash el nombre de usuario podían tener dos usuarios un mismo token. 
+
+![Pasted image 20251008154113.png](img/Pasted_image_20251008154113.png)
+
+![Pasted image 20251008154122.png](img/Pasted_image_20251008154122.png)
+
+![Pasted image 20251008154140.png](img/Pasted_image_20251008154140.png)
+
+simplemente en el link cambia el user por carlos. -replace " ", "_"
+    )
+
+## Lab: Single-endpoint race conditions
+
+Enviar el grupo muchas veces
+![Pasted image 20251008152302.png](img/
+________
+-__Enviar_múltiples_request_en_simultaneo,_puede_ser_trigger_race_conditions_o_con_grupos_en_burp_repeater
+-_Turbo_intruder
+-_
+##_Lab:_Limit_overrun_race_conditions
+
+![Pasted_image_20251008131333.png](img/Pasted_image_20251008131333.png)
+
+## Lab: Bypassing rate limits via race conditions
+
+![Pasted image 20251008142846.png](img/Pasted_image_20251008142846.png)
+
+![Pasted image 20251008142821.png](img/Pasted_image_20251008142821.png)
+
+## Lab: Multi-endpoint race conditions
+
+![Pasted image 20251008150214.png](img/Pasted_image_20251008150214.png)
+
+![Pasted image 20251008150221.png](img/Pasted_image_20251008150221.png)
+
+## Lab: Single-endpoint race conditions
+
+Enviar el grupo muchas veces
+![Pasted image 20251008152302.png](img/Pasted_image_20251008152302.png)
+![Pasted image 20251008152320.png](img/Pasted_image_20251008152320.png)
+
+
+![Pasted image 20251008152255.png](img/Pasted_image_20251008152255.png)
+
+## Lab: Exploiting time-sensitive vulnerabilities
+
+Debido a un bloqueo que permite solo enviar 1 petición por id de session, se debe enviar la petición con un id de sesion distinto. 
+
+Debido a que el hash generaba el token en base a un timestamp y no incluia en ese hash el nombre de usuario podían tener dos usuarios un mismo token. 
+
+![Pasted image 20251008154113.png](img/Pasted_image_20251008154113.png)
+
+![Pasted image 20251008154122.png](img/Pasted_image_20251008154122.png)
+
+![Pasted image 20251008154140.png](img/Pasted_image_20251008154140.png)
+
+simplemente en el link cambia el user por carlos. -replace " ", "_"
+    )
+![Pasted image 20251008152320.png](img/
+________
+-__Enviar_múltiples_request_en_simultaneo,_puede_ser_trigger_race_conditions_o_con_grupos_en_burp_repeater
+-_Turbo_intruder
+-_
+##_Lab:_Limit_overrun_race_conditions
+
+![Pasted_image_20251008131333.png](img/Pasted_image_20251008131333.png)
+
+## Lab: Bypassing rate limits via race conditions
+
+![Pasted image 20251008142846.png](img/Pasted_image_20251008142846.png)
+
+![Pasted image 20251008142821.png](img/Pasted_image_20251008142821.png)
+
+## Lab: Multi-endpoint race conditions
+
+![Pasted image 20251008150214.png](img/Pasted_image_20251008150214.png)
+
+![Pasted image 20251008150221.png](img/Pasted_image_20251008150221.png)
+
+## Lab: Single-endpoint race conditions
+
+Enviar el grupo muchas veces
+![Pasted image 20251008152302.png](img/Pasted_image_20251008152302.png)
+![Pasted image 20251008152320.png](img/Pasted_image_20251008152320.png)
+
+
+![Pasted image 20251008152255.png](img/Pasted_image_20251008152255.png)
+
+## Lab: Exploiting time-sensitive vulnerabilities
+
+Debido a un bloqueo que permite solo enviar 1 petición por id de session, se debe enviar la petición con un id de sesion distinto. 
+
+Debido a que el hash generaba el token en base a un timestamp y no incluia en ese hash el nombre de usuario podían tener dos usuarios un mismo token. 
+
+![Pasted image 20251008154113.png](img/Pasted_image_20251008154113.png)
+
+![Pasted image 20251008154122.png](img/Pasted_image_20251008154122.png)
+
+![Pasted image 20251008154140.png](img/Pasted_image_20251008154140.png)
+
+simplemente en el link cambia el user por carlos. -replace " ", "_"
+    )
+
+
+![Pasted image 20251008152255.png](img/
+________
+-__Enviar_múltiples_request_en_simultaneo,_puede_ser_trigger_race_conditions_o_con_grupos_en_burp_repeater
+-_Turbo_intruder
+-_
+##_Lab:_Limit_overrun_race_conditions
+
+![Pasted_image_20251008131333.png](img/Pasted_image_20251008131333.png)
+
+## Lab: Bypassing rate limits via race conditions
+
+![Pasted image 20251008142846.png](img/Pasted_image_20251008142846.png)
+
+![Pasted image 20251008142821.png](img/Pasted_image_20251008142821.png)
+
+## Lab: Multi-endpoint race conditions
+
+![Pasted image 20251008150214.png](img/Pasted_image_20251008150214.png)
+
+![Pasted image 20251008150221.png](img/Pasted_image_20251008150221.png)
+
+## Lab: Single-endpoint race conditions
+
+Enviar el grupo muchas veces
+![Pasted image 20251008152302.png](img/Pasted_image_20251008152302.png)
+![Pasted image 20251008152320.png](img/Pasted_image_20251008152320.png)
+
+
+![Pasted image 20251008152255.png](img/Pasted_image_20251008152255.png)
+
+## Lab: Exploiting time-sensitive vulnerabilities
+
+Debido a un bloqueo que permite solo enviar 1 petición por id de session, se debe enviar la petición con un id de sesion distinto. 
+
+Debido a que el hash generaba el token en base a un timestamp y no incluia en ese hash el nombre de usuario podían tener dos usuarios un mismo token. 
+
+![Pasted image 20251008154113.png](img/Pasted_image_20251008154113.png)
+
+![Pasted image 20251008154122.png](img/Pasted_image_20251008154122.png)
+
+![Pasted image 20251008154140.png](img/Pasted_image_20251008154140.png)
+
+simplemente en el link cambia el user por carlos. -replace " ", "_"
+    )
+
+## Lab: Exploiting time-sensitive vulnerabilities
+
+Debido a un bloqueo que permite solo enviar 1 petición por id de session, se debe enviar la petición con un id de sesion distinto. 
+
+Debido a que el hash generaba el token en base a un timestamp y no incluia en ese hash el nombre de usuario podían tener dos usuarios un mismo token. 
+
+![Pasted image 20251008154113.png](img/
+________
+-__Enviar_múltiples_request_en_simultaneo,_puede_ser_trigger_race_conditions_o_con_grupos_en_burp_repeater
+-_Turbo_intruder
+-_
+##_Lab:_Limit_overrun_race_conditions
+
+![Pasted_image_20251008131333.png](img/Pasted_image_20251008131333.png)
+
+## Lab: Bypassing rate limits via race conditions
+
+![Pasted image 20251008142846.png](img/Pasted_image_20251008142846.png)
+
+![Pasted image 20251008142821.png](img/Pasted_image_20251008142821.png)
+
+## Lab: Multi-endpoint race conditions
+
+![Pasted image 20251008150214.png](img/Pasted_image_20251008150214.png)
+
+![Pasted image 20251008150221.png](img/Pasted_image_20251008150221.png)
+
+## Lab: Single-endpoint race conditions
+
+Enviar el grupo muchas veces
+![Pasted image 20251008152302.png](img/Pasted_image_20251008152302.png)
+![Pasted image 20251008152320.png](img/Pasted_image_20251008152320.png)
+
+
+![Pasted image 20251008152255.png](img/Pasted_image_20251008152255.png)
+
+## Lab: Exploiting time-sensitive vulnerabilities
+
+Debido a un bloqueo que permite solo enviar 1 petición por id de session, se debe enviar la petición con un id de sesion distinto. 
+
+Debido a que el hash generaba el token en base a un timestamp y no incluia en ese hash el nombre de usuario podían tener dos usuarios un mismo token. 
+
+![Pasted image 20251008154113.png](img/Pasted_image_20251008154113.png)
+
+![Pasted image 20251008154122.png](img/Pasted_image_20251008154122.png)
+
+![Pasted image 20251008154140.png](img/Pasted_image_20251008154140.png)
+
+simplemente en el link cambia el user por carlos. -replace " ", "_"
+    )
+
+![Pasted image 20251008154122.png](img/
+________
+-__Enviar_múltiples_request_en_simultaneo,_puede_ser_trigger_race_conditions_o_con_grupos_en_burp_repeater
+-_Turbo_intruder
+-_
+##_Lab:_Limit_overrun_race_conditions
+
+![Pasted_image_20251008131333.png](img/Pasted_image_20251008131333.png)
+
+## Lab: Bypassing rate limits via race conditions
+
+![Pasted image 20251008142846.png](img/Pasted_image_20251008142846.png)
+
+![Pasted image 20251008142821.png](img/Pasted_image_20251008142821.png)
+
+## Lab: Multi-endpoint race conditions
+
+![Pasted image 20251008150214.png](img/Pasted_image_20251008150214.png)
+
+![Pasted image 20251008150221.png](img/Pasted_image_20251008150221.png)
+
+## Lab: Single-endpoint race conditions
+
+Enviar el grupo muchas veces
+![Pasted image 20251008152302.png](img/Pasted_image_20251008152302.png)
+![Pasted image 20251008152320.png](img/Pasted_image_20251008152320.png)
+
+
+![Pasted image 20251008152255.png](img/Pasted_image_20251008152255.png)
+
+## Lab: Exploiting time-sensitive vulnerabilities
+
+Debido a un bloqueo que permite solo enviar 1 petición por id de session, se debe enviar la petición con un id de sesion distinto. 
+
+Debido a que el hash generaba el token en base a un timestamp y no incluia en ese hash el nombre de usuario podían tener dos usuarios un mismo token. 
+
+![Pasted image 20251008154113.png](img/Pasted_image_20251008154113.png)
+
+![Pasted image 20251008154122.png](img/Pasted_image_20251008154122.png)
+
+![Pasted image 20251008154140.png](img/Pasted_image_20251008154140.png)
+
+simplemente en el link cambia el user por carlos. -replace " ", "_"
+    )
+
+![Pasted image 20251008154140.png](img/
+________
+-__Enviar_múltiples_request_en_simultaneo,_puede_ser_trigger_race_conditions_o_con_grupos_en_burp_repeater
+-_Turbo_intruder
+-_
+##_Lab:_Limit_overrun_race_conditions
+
+![Pasted_image_20251008131333.png](img/Pasted_image_20251008131333.png)
+
+## Lab: Bypassing rate limits via race conditions
+
+![Pasted image 20251008142846.png](img/Pasted_image_20251008142846.png)
+
+![Pasted image 20251008142821.png](img/Pasted_image_20251008142821.png)
+
+## Lab: Multi-endpoint race conditions
+
+![Pasted image 20251008150214.png](img/Pasted_image_20251008150214.png)
+
+![Pasted image 20251008150221.png](img/Pasted_image_20251008150221.png)
+
+## Lab: Single-endpoint race conditions
+
+Enviar el grupo muchas veces
+![Pasted image 20251008152302.png](img/Pasted_image_20251008152302.png)
+![Pasted image 20251008152320.png](img/Pasted_image_20251008152320.png)
+
+
+![Pasted image 20251008152255.png](img/Pasted_image_20251008152255.png)
+
+## Lab: Exploiting time-sensitive vulnerabilities
+
+Debido a un bloqueo que permite solo enviar 1 petición por id de session, se debe enviar la petición con un id de sesion distinto. 
+
+Debido a que el hash generaba el token en base a un timestamp y no incluia en ese hash el nombre de usuario podían tener dos usuarios un mismo token. 
+
+![Pasted image 20251008154113.png](img/Pasted_image_20251008154113.png)
+
+![Pasted image 20251008154122.png](img/Pasted_image_20251008154122.png)
+
+![Pasted image 20251008154140.png](img/Pasted_image_20251008154140.png)
+
+simplemente en el link cambia el user por carlos. -replace " ", "_"
+    )
 
 simplemente en el link cambia el user por carlos.
+
