@@ -4,65 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "8896187bc502283d",
+        "id": "1faed9202155fa56",
         "type": "tabs",
         "children": [
           {
-            "id": "34a172e5729a0a6f",
+            "id": "6359123cced0d926",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10 - Server-side Request Forgery.md",
+                "file": "27 - HTTP request smuggling.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10 - Server-side Request Forgery"
-            }
-          },
-          {
-            "id": "472b76c720cefd7c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "29 - JWT Attacks.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "29 - JWT Attacks"
-            }
-          },
-          {
-            "id": "37dface2b5eec943",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "29 - JWT Attacks.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "29 - JWT Attacks"
-            }
-          },
-          {
-            "id": "20f29b634375d9a1",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Pasted image 20251031013319.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251031013319"
+              "title": "27 - HTTP request smuggling"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -210,12 +169,27 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "37dface2b5eec943",
+  "active": "6359123cced0d926",
   "lastOpenFiles": [
-    "20 - Web Sockets.md",
+    "img/Pasted image 20251120132033.png",
     "15 - Cross-site scripting.md",
-    "14 - Web Cache Deception.md",
+    "27 - HTTP request smuggling.md",
+    "20 - Web Sockets.md",
+    "img/Pasted image 20251117225623.png",
+    "17 - Cross-origin resources sharing (CORS).md",
+    "Cross-origin resource sharing (CORS).md",
+    "29 - JWT Attacks.md",
+    "README.md",
+    "28 - OAuth authentication.md",
+    "26 - HTTP Host header attacks.md",
+    "img/Pasted image 20251117225633.png",
+    "25 - Web Cache Poisoning.md",
+    "18 - Clickjacking.md",
+    "24 - SSTI.md",
+    "1 - SQL Injection.md",
+    "Sin nombre",
     "10 - Server-side Request Forgery.md",
+    "14 - Web Cache Deception.md",
     "9 - Race Conditions.md",
     "7 - Access Control.md",
     "8 - File Upload Vulnerabilities.md",
@@ -224,11 +198,9 @@
     "4 - OS Command Injection.md",
     "3 - Path Traversal.md",
     "2 - Authentication.md",
-    "1 - SQL Injection.md",
     "Notas.md",
     "rename.ps1~",
     "img/img/Pasted 1.md",
-    "img/img/Pasted.md",
     "img/img",
     "img/Pasted_image_20251102030100.png",
     "img/Pasted_image_20251102022031.png",
@@ -238,15 +210,7 @@
     "img/Pasted_image_20251031204409.png",
     "img/Pasted_image_20251031181607.png",
     "img/Pasted_image_20251031031145.png",
-    "img/Pasted_image_20251031030957.png",
-    "img/Pasted_image_20251031020645.png",
     "rename.ps1",
-    "c.py~",
-    "img/Pasted.md",
-    "16 - Cross-site request forgery (CSRF).md",
-    "25 - Web Cache Poisoning.md",
-    "29 - JWT Attacks.md",
-    "Cross-origin resource sharing (CORS).md",
-    "README.md"
+    "c.py~"
   ]
 }

