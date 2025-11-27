@@ -243,3 +243,4 @@ Host: 0a1a004b0472f3598060687a00ee0005.web-security-academy.net\r\n
 
 ![[Pasted image 20251120132033.png]]
 
+## 

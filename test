@@ -1,0 +1,22 @@
+import base64
+import urllib.parse
+
+cipher = "8qCCqSgcZZEX025cDID0+q5eH54jl0EVtDSy3F3PN6RZYjoxevcpxupadpl1qWyK2fRbCPKxYr4Q0wURNxzBWQ=="
+
+# decodificar URL
+cipher = urllib.parse.unquote(cipher)
+
+# base64 decode
+raw = base64.b64decode(cipher)
+
+# eliminar primeros 32 bytes
+raw = raw[32:]
+
+# re-encode
+b64 = base64.b64encode(raw).decode()
+url = urllib.parse.quote(b64)
+
+print(url)
+
+
+laboratorio de padding oracle 

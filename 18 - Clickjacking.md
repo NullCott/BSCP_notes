@@ -134,7 +134,7 @@ Debido a que la página solicitaba confirmación para eliminar el usuario se apl
     background-color: red;
     width: 150px;
     height: 40px;
-    top: 500px; 
+    top: 500px; i
     left: 20px;
     z-index: 2; 
   }

